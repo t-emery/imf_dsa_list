@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  "0 9 * * *"
+    - cron:  "30 12 * * SUN" # Sunday at 13:22 UTC, 9:22 Eastern Daylight Time
   workflow_dispatch:
 
 name: imf_lic_dsa_scraper
