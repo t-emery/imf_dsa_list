@@ -1,0 +1,71 @@
+country_name,iso3c,date_latest_pub,risk_of_distress,joint_w_wb,date_latest_exec_board_not_published,country_notes,dsa_list_date
+Afghanistan,AFG,2021-06-28,High,Yes,NA,,2023-06-30
+Bangladesh,BGD,2023-02-02,Low,Yes,NA,,2023-06-30
+Benin,BEN,2023-05-24,Moderate,Yes,NA,,2023-06-30
+Bhutan,BTN,2022-05-24,Moderate,Yes,NA,,2023-06-30
+Burkina Faso,BFA,2023-04-25,Moderate,Yes,NA,,2023-06-30
+Burundi,BDI,2022-07-29,High,Yes,NA,,2023-06-30
+Cambodia,KHM,2022-12-18,Low,Yes,NA,,2023-06-30
+Cameroon,CMR,2023-03-20,High,Yes,NA,3/,2023-06-30
+Cape Verde,CPV,2022-07-21,Moderate,Yes,2023-06-22,3/,2023-06-30
+Central African Republic,CAF,2023-05-02,High,Yes,NA,,2023-06-30
+Chad,TCD,2023-01-23,High,Yes,NA,,2023-06-30
+Comoros,COM,2021-10-29,High,Yes,2023-06-01,,2023-06-30
+Congo - Kinshasa,COD,2023-07-05,Moderate,Yes,NA,,2023-06-30
+Congo - Brazzaville,COG,2023-02-15,In debt distress,Yes,NA,3/,2023-06-30
+Côte d’Ivoire,CIV,2023-06-12,Moderate,Yes,NA,,2023-06-30
+Djibouti,DJI,2020-05-12,High,Yes,2023-02-15,,2023-06-30
+Dominica,DMA,2023-07-05,High,Yes,NA,3/,2023-06-30
+Eritrea,ERI,NA,NA,NA,2019-07-22,,2023-06-30
+Ethiopia,ETH,2020-05-06,High,Yes,NA,,2023-06-30
+Gambia,GMB,2022-12-21,High,Yes,2023-06-12,,2023-06-30
+Ghana,GHA,2023-05-17,In debt distress,Yes,NA,,2023-06-30
+Grenada,GRD,2022-05-10,In debt distress,Yes,NA,3/,2023-06-30
+Guinea,GIN,2023-01-23,Moderate,Yes,NA,,2023-06-30
+Guinea-Bissau,GNB,2023-02-15,High,Yes,NA,,2023-06-30
+Guyana,GUY,2022-09-27,Moderate,Yes,NA,4/,2023-06-30
+Haiti,HTI,2023-02-07,High,Yes,NA,,2023-06-30
+Honduras,HND,2021-09-14,Low,Yes,NA,,2023-06-30
+Kenya,KEN,2022-12-20,High,Yes,NA,,2023-06-30
+Kiribati,KIR,2019-01-24,High,Yes,2023-04-19,,2023-06-30
+Kyrgyzstan,KGZ,2023-02-16,Moderate,Yes,NA,,2023-06-30
+Laos,LAO,2023-05-22,In debt distress,Yes,NA,,2023-06-30
+Lesotho,LSO,2022-06-07,Moderate,Yes,NA,,2023-06-30
+Liberia,LBR,2022-09-14,Moderate,Yes,NA,,2023-06-30
+Madagascar,MDG,2023-03-21,Moderate,Yes,NA,,2023-06-30
+Malawi,MWI,2022-11-23,In debt distress,Yes,NA,,2023-06-30
+Maldives,MDV,2020-04-23,High,Yes,2022-11-23,,2023-06-30
+Mali,MLI,2021-03-30,Moderate,Yes,2023-05-25,,2023-06-30
+Marshall Islands,MHL,2021-05-27,High,Yes,NA,,2023-06-30
+Mauritania,MRT,2023-02-03,Moderate,Yes,NA,,2023-06-30
+Micronesia (Federated States of),FSM,2021-11-01,High,Yes,NA,,2023-06-30
+Moldova,MDA,2023-01-12,Low,Yes,NA,3/,2023-06-30
+Mozambique,MOZ,2020-04-29,In debt distress,Yes,2022-05-09,,2023-06-30
+Myanmar (Burma),MMR,2021-01-28,Low,Yes,NA,,2023-06-30
+Nepal,NPL,2023-05-04,Low,Yes,NA,,2023-06-30
+Nicaragua,NIC,2023-01-27,Moderate,Yes,NA,,2023-06-30
+Niger,NER,2023-01-27,Moderate,Yes,NA,,2023-06-30
+Papua New Guinea,PNG,2023-03-29,High,Yes,NA,3/,2023-06-30
+Rwanda,RWA,2022-12-19,Moderate,Yes,NA,,2023-06-30
+Samoa,WSM,2023-03-15,High,Yes,NA,,2023-06-30
+São Tomé & Príncipe,STP,2022-09-20,In debt distress,Yes,NA,,2023-06-30
+Senegal,SEN,2023-07-07,Moderate,Yes,NA,,2023-06-30
+Sierra Leone,SLE,2022-07-29,High,Yes,2023-06-05,,2023-06-30
+Solomon Islands,SLB,2022-01-21,Moderate,Yes,2023-04-26,,2023-06-30
+Somalia,SOM,2023-05-31,In debt distress,Yes,NA,,2023-06-30
+South Sudan,SSD,2023-03-09,High,Yes,NA,,2023-06-30
+St. Lucia,LCA,2011-09-09,Moderate,No,2011-10-17,3/5/,2023-06-30
+St. Vincent & Grenadines,VCT,2022-11-17,High,Yes,NA,3/,2023-06-30
+Sudan,SDN,2021-07-01,In debt distress,Yes,NA,,2023-06-30
+Tajikistan,TJK,2023-03-28,High,Yes,NA,,2023-06-30
+Tanzania,TZA,2023-04-28,Moderate,Yes,NA,,2023-06-30
+Timor-Leste,TLS,2022-09-22,Moderate,Yes,NA,3/,2023-06-30
+Togo,TGO,2020-04-16,Moderate,Yes,NA,,2023-06-30
+Tonga,TON,2022-08-26,High,Yes,NA,,2023-06-30
+Tuvalu,TUV,2021-08-04,High,Yes,NA,,2023-06-30
+Uganda,UGA,2023-06-23,Moderate,Yes,NA,,2023-06-30
+Uzbekistan,UZB,2022-06-22,Low,Yes,NA,3/,2023-06-30
+Vanuatu,VUT,2023-03-22,Moderate,Yes,NA,,2023-06-30
+Yemen,YEM,2014-09-24,Moderate,Yes,2016-06-01,,2023-06-30
+Zambia,ZMB,2022-09-06,In debt distress,Yes,NA,,2023-06-30
+Zimbabwe,ZWE,2022-04-08,In debt distress,Yes,2023-03-15,3/,2023-06-30
