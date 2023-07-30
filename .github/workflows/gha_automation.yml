@@ -3,7 +3,7 @@ on:
     - cron:  "0 9 * * *"
   workflow_dispatch:
 
-name: 01-rscript
+name: imf_lic_dsa_scraper
 
 jobs:
   run-r-script:
