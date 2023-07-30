@@ -2,6 +2,9 @@ IMF Debt Distress List
 ================
 Teal Emery
 
+- <a href="#introduction" id="toc-introduction">Introduction</a>
+- <a href="#features" id="toc-features">Features</a>
+
 ## Introduction
 
 The IMF publishes the risk of debt distress for

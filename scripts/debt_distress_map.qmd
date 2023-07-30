@@ -1,0 +1,93 @@
+---
+title: "Debt Distress map"
+author: "Teal Emery"
+format: gfm
+editor: visual
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(rnaturalearth)
+library(here)
+```
+
+```{r}
+dsa_list_url <- "https://raw.githubusercontent.com/t-emery/imf_dsa_list/master/data/imf_lic_dsa_list_as_of_2023-01-31.csv"
+
+dsa_list_tbl <- dsa_list_url |> 
+  read_csv()
+
+dsa_list_tbl
+```
+
+```{r}
+dsa_list_tbl |> 
+  distinct(risk_of_distress)
+```
+
+```{r}
+ne_map_data <- ne_countries(returnclass = "sf")
+```
+
+```{r}
+debt_distress_names <- tribble(~risk_of_distress, ~chart_name,
+        "In debt distress", "In Debt Distress",
+        "High", "High Risk",
+        "Moderate", "Moderate Risk",
+        "Low", "Low Risk") |> 
+  mutate(chart_name = factor(chart_name, levels = c("In Debt Distress", "High Risk", "Moderate Risk", "Low Risk")))
+
+debt_distress_names
+```
+
+```{r}
+debt_colors <- c("In Debt Distress" = "#cb181d", "High Risk" = "#fb6a4a", "Moderate Risk" = "#fcae91", "Low Risk" = "#fee5d9")
+```
+
+```{r}
+viridis_option = "G"
+base_family = "Roboto Condensed"
+base_size = 12
+title_size = 16
+subtitle_size = 12
+caption_size = 8
+
+g <- ne_map_data |> 
+  left_join(dsa_list_tbl, by = c("iso_a3" = "iso3c")) |> 
+  left_join(debt_distress_names, by = join_by(risk_of_distress)) |> 
+  filter(iso_a3 != "ATA") |>  # remove Antarctica
+  ggplot(aes(fill = chart_name)) +
+  geom_sf() +
+  #scale_fill_viridis_d(option = "G", na.value = "grey95", direction = -1) +
+  scale_fill_manual(values = debt_colors, na.value = "grey95") +
+  theme_minimal(base_size = base_size, base_family = base_family) +
+  theme(legend.position="bottom",
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+
+        text = element_text(family = base_family, size = base_size),
+        plot.title = element_text(family = paste(base_family,"Bold"), 
+                                  size = title_size, hjust=0),
+        plot.subtitle = element_text(family = paste(base_family,"Light Italic"), 
+                                     size = subtitle_size, hjust=0, 
+                                     margin = margin(0.2, 0, 0.5, 0, unit="cm")),
+        plot.caption = element_text(family = paste(base_family,"Light Italic"), 
+                                    size = caption_size, 
+                                    margin = margin(0.5, 0, 0, 0, unit = "cm"), 
+                                    hjust = 1),
+        ) +
+    labs(
+      title = str_wrap("Risk of Debt Distress",width = 60),
+      subtitle = str_wrap("IMF/WB LIC Debt Sustainability Analysis for PRGT-Eligible Countries"),
+      fill = NULL,
+      caption = str_wrap("Data: IMF | Visualization: Teal Emery",width = 70)
+  )
+
+g
+```
+
+```{r}
+ggsave(here("images", "debt_distress_map.jpeg"), device = "jpeg", width = 7, height = 5)
+```
+

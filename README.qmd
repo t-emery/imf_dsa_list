@@ -1,7 +1,9 @@
 ---
 title: "IMF Debt Distress List"
 author: "Teal Emery"
-format: gfm
+format: 
+  gfm:
+    toc: true
 editor: visual
 ---
 
@@ -22,3 +24,7 @@ While this data is public, it's [published online in a pdf](https://www.imf.org/
 **File Naming Convention**: The script extracts the as of date listed at the top of the pdf, and appends it to the end of the file name so that it is clear when the data is from.
 
 Eventually I'd like to automate this to run periodically using GitHub Actions. If you want to help with this, ping me.
+
+# Debt Distress Map
+
+![Debt Distress Map](images/debt_distress_map.jpeg)
